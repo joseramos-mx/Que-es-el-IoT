@@ -39,17 +39,17 @@ Si la versión es anterior a la 10.x, o bien si no hay ninguna versión de Node.
  ```
  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash sudo apt-get -y install nodejs
  ```
- 
- * 3. Clone la aplicación de ejemplo.
 
+ * 3. Clone la aplicación de ejemplo.
+ 
  ```
  git clone https://github.com/Azure-Samples/azure-iot-samples-node.git
   ```
  
  * 4. Instale todos los paquetes para el ejemplo. La instalación incluye el SDK de dispositivo IoT de Azure, la biblioteca del sensor BME280 y la biblioteca de cableado de Pi.
+ 
    ```
- cd azure-iot-samples-node/iot-hub/Tutorials/RaspberryPiApp
-npm install
+ cd azure-iot-samples-node/iot-hub/Tutorials/RaspberryPiApp npm install
    ```
  
  > Este proceso de instalación puede llevar varios minutos en función de la conexión de red.
