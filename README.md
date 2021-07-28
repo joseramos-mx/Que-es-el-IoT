@@ -11,8 +11,8 @@ En este tutorial, empezará por aprender los principios básicos del uso de Rasp
 
 ### Clonar una aplicación de ejemplo e instalar los paquetes de requisitos previos
 
-* Conéctese a Raspberry Pi con uno de los siguientes clientes SSH del equipo host:
-* 
+* 1. Conéctese a Raspberry Pi con uno de los siguientes clientes SSH del equipo host:
+
 ###### Usuarios de Windows
 
 a. Descargue e instale PuTTY para Windows.
@@ -20,3 +20,9 @@ a. Descargue e instale PuTTY para Windows.
 b. Copie la dirección IP de Pi en la sección de nombre de host (o dirección IP) y seleccione SSH como el tipo de conexión.
 
 ![Putty](https://docs.microsoft.com/es-mx/azure/iot-hub/media/iot-hub-raspberry-pi-kit-node-get-started/7-putty-windows.png)
+
+> El nombre de usuario predeterminado es pi y la contraseña es raspberry.
+
+###### Usuarios de Mac y Ubuntu
+
+Use el cliente de SSH integrado en Ubuntu o macOS. Quizás deba ejecutar ssh pi@<ip address of pi> para conectar Pi mediante SSH.
