@@ -48,8 +48,47 @@ Si la versión es anterior a la 10.x, o bien si no hay ninguna versión de Node.
  
  * 4. Instale todos los paquetes para el ejemplo. La instalación incluye el SDK de dispositivo IoT de Azure, la biblioteca del sensor BME280 y la biblioteca de cableado de Pi.
  
-   ```
+```
  cd azure-iot-samples-node/iot-hub/Tutorials/RaspberryPiApp npm install
-   ```
+```
  
- > Este proceso de instalación puede llevar varios minutos en función de la conexión de red.
+> Este proceso de instalación puede llevar varios minutos en función de la conexión de red.
+
+# Configurar la aplicación de ejemplo
+
+* 1.Abra el archivo config mediante la ejecución de los comandos siguientes:
+ 
+ ```
+ nano config.json
+ ```
+ 
+Hay dos elementos en este archivo que se pueden configurar. El primero es interval, que define el intervalo de tiempo (en milisegundos) entre los mensajes que se envían a la nube. El segundo es simulatedData, un valor booleano que indica si se usan los datos de sensor simulados o no.
+
+Si no tiene el sensor, establezca el valor simulatedData en true para que la aplicación de ejemplo cree y use datos de sensor simulados.
+
+Nota: La dirección de I2C usada en este tutorial es 0x77 de forma predeterminada. En función de su configuración, también podría ser 0x76: si encuentra un error de I2C, intente cambiar el valor a 118 y compruebe si se resuelve. Para ver qué dirección usa el sensor, ejecute sudo i2cdetect -y 1 en un shell de Raspberry Pi.
+ 
+ ```json
+ 
+
+{
+    "simulatedData":  true,
+    "interval": 200,
+    "deviceId": "Raspberry Pi Node",
+    "LEDpinGPIO": 24,
+    "messageMax": 256,
+    "credentialPath": "~/.iot-hub",
+    "temperatureAlert": 30,
+    "transport": "mqtt",
+    "iotEdgeRootCertFilePath": null,
+    "i2cOption":{
+           "pin": 9,
+           "i2cBusNo": 1,
+           "i2cAddress": 119
+    }
+   }
+   
+   
+  ```
+ * 2. Guarde y salga al presionar Control-O > Entrar > Control-X.
+
