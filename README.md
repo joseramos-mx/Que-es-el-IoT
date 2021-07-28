@@ -31,6 +31,6 @@ Use el cliente de SSH integrado en Ubuntu o macOS. Quizás deba ejecutar ssh pi@
   
   En primer lugar, compruebe la versión de Node.js.
 
-'''
+```
   node -v
-  '''
+```
