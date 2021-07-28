@@ -96,3 +96,7 @@ Ejecute la aplicación de ejemplo mediante el comando siguiente:
 ```
  sudo node index.js '<YOUR AZURE IOT HUB DEVICE CONNECTION STRING>'
  ```
+ 
+ # Tutorial: Implementación y tutorial de una plantilla de aplicación de supervisión continua de pacientes
+ 
+ https://docs.microsoft.com/es-mx/azure/iot-central/healthcare/tutorial-continuous-patient-monitoring
