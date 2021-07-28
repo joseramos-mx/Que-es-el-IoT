@@ -56,7 +56,7 @@ Si la versión es anterior a la 10.x, o bien si no hay ninguna versión de Node.
 
 # Configurar la aplicación de ejemplo
 
-* 1.Abra el archivo config mediante la ejecución de los comandos siguientes:
+* 1. Abra el archivo config mediante la ejecución de los comandos siguientes:
  
  ```
  nano config.json
@@ -87,8 +87,12 @@ Nota: La dirección de I2C usada en este tutorial es 0x77 de forma predeterminad
            "i2cAddress": 119
     }
    }
-   
-   
   ```
  * 2. Guarde y salga al presionar Control-O > Entrar > Control-X.
 
+# Ejecutar la aplicación de ejemplo
+ 
+Ejecute la aplicación de ejemplo mediante el comando siguiente:
+```
+ sudo node index.js '<YOUR AZURE IOT HUB DEVICE CONNECTION STRING>'
+ ```
