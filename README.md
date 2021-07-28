@@ -15,7 +15,7 @@ En este tutorial, empezará por aprender los principios básicos del uso de Rasp
 
 ###### Usuarios de Windows
 
-a. Descargue e instale PuTTY para Windows.
+a. Descargue e instale [PuTTY](https://www.putty.org/) para Windows.
 
 b. Copie la dirección IP de Pi en la sección de nombre de host (o dirección IP) y seleccione SSH como el tipo de conexión.
 
@@ -26,3 +26,11 @@ b. Copie la dirección IP de Pi en la sección de nombre de host (o dirección I
 ###### Usuarios de Mac y Ubuntu
 
 Use el cliente de SSH integrado en Ubuntu o macOS. Quizás deba ejecutar ssh pi@<ip address of pi> para conectar Pi mediante SSH.
+
+  * 2. Instale Node.js y NPM en Pi.
+  
+  En primer lugar, compruebe la versión de Node.js.
+
+'''
+  node -v
+  '''
